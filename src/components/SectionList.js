@@ -31,7 +31,7 @@ export const SectionList = () => {
   return (
     <div className="section-list mt-6">
       <Loading show={images.loading} />
-      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white">
         {images.data.map((item, index) => {
           return <SectionItem key={index} {...item} />;
         })}
